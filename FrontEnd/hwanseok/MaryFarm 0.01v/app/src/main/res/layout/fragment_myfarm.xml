@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.myfarm.MyfarmFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myfarm_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@color/purple_200"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:id="@+id/myfarm_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/myfarm_profile"
+        android:text="감귤댁"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내가 따르는 이웃"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/myfarm_profile"
+        android:layout_below="@id/myfarm_nickname"/>
+<!--    내가 따르는 이웃의 수 -->
+    <TextView
+        android:id="@+id/follow_you_cnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview"
+        android:layout_alignTop="@+id/textview"
+        android:text=" 0 "
+        />
+
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나를 따르는 이웃"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/myfarm_profile"
+        android:layout_below="@id/textview"/>
+<!--    나를 따르는 이웃의 수 -->
+    <TextView
+        android:id="@+id/follow_me_cnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview"
+        android:layout_alignTop="@+id/textview2"
+        android:text=" 10 "
+        />
+    <TextView
+        android:id="@+id/badge_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/myfarm_profile"
+        android:text="뱃지 와야될 공간 임시 텍스트뷰  "/>
+
+    <!--    상단 내용 -->
+
+    <!--    구분선 -->
+    <View
+        android:id="@+id/myfarm_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/badge_container"
+        android:background="#787777"/>
+
+
+<!--    하게되면 리싸이클러뷰로 파서 옮겨서 다시 작성 -->
+    <!--    하단 -->
+    <ImageView
+        android:id="@+id/myfarm_image_1"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/myfarm_line"
+        />
+    <ImageView
+        android:id="@+id/myfarm_image_2"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/myfarm_image_1"
+        android:layout_alignTop="@+id/myfarm_image_1"/>
+
+    <ImageView
+        android:id="@+id/myfarm_image_3"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/myfarm_image_1"
+        android:layout_below="@+id/myfarm_image_2" />
+
+    <TextView
+        android:id="@+id/myfarm_title"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myfarm_image_1"
+        />
+
+    <TextView
+        android:id="@+id/myfarm_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/myfarm_title"
+        android:layout_alignTop="@+id/myfarm_title"/>
+
+    <!-- 관섭 - 버튼 클릭시 디테일 페이지로 이동   -->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="화면전환 (Detail page)"
+        android:gravity="center"/>
+
+</RelativeLayout>

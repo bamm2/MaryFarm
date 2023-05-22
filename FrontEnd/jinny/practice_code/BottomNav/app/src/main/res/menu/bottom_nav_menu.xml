@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_bottom_home"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="메인" />
+    <item
+        android:id="@+id/menu_bottom_message"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="메세지" />
+    <item
+        android:id="@+id/menu_bottom_write"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_camera_enhance_24"
+        android:title="새 일지"/>
+    <item
+        android:id="@+id/menu_bottom_alarm"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="알림" />
+    <item
+        android:id="@+id/menu_bottom_farm"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_local_florist_24"
+        android:title="내 농장"/>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:title="search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:enabled="true"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:id="@+id/menu_setting"
+        android:title="setting"
+        android:enabled="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/test1"
+        android:title="테스트용1"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/test2"
+        android:title="테스트용2"
+        android:icon="@drawable/ic_launcher_background"
+        android:enabled="true"
+        app:showAsAction="always"/>
+
+
+</menu>

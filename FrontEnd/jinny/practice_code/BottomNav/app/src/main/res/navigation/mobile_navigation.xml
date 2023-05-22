@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/menu_bottom_home">
+
+    <fragment
+        android:id="@+id/menu_bottom_home"
+        android:name="com.numberone.bottomnav.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label=""/>
+
+    <fragment
+        android:id="@+id/menu_bottom_message"
+        android:name="com.numberone.bottomnav.ui.dashboard.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/menu_bottom_write"
+        android:name="com.numberone.bottomnav.ui.write.WriteFragment"
+        tools:layout="@layout/fragment_write" />
+    <fragment
+        android:id="@+id/menu_bottom_alarm"
+        android:name="com.numberone.bottomnav.ui.notifications.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/menu_bottom_farm"
+        android:name="com.numberone.bottomnav.ui.myfarm.MyfarmFragment"
+        android:label="내농장"
+        tools:layout="@layout/fragment_myfarm" />
+
+</navigation>

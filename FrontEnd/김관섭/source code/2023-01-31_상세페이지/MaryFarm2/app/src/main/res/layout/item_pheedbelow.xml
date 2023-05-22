@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/firstImg"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@color/purple_500"
+        />
+
+    <ImageView
+        android:id="@+id/secondImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/firstImg"
+        android:background="@color/purple_200"
+        />
+       <ImageView
+           android:id="@+id/thirdImg"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:layout_marginLeft="15dp"
+           android:layout_toRightOf="@+id/firstImg"
+           android:layout_alignBottom="@id/firstImg"
+           android:background="@color/teal_700"
+           />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/firstImg"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@color/teal_200"/>
+
+           <TextView
+               android:id="@+id/nickname"
+               android:layout_width="wrap_content"
+               android:layout_height="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="3dp"
+               android:layout_below="@id/firstImg"
+               android:layout_toRightOf="@id/userImg"
+               android:text="닉네임 올 자리 " />
+
+           <TextView
+               android:id="@+id/title"
+               android:layout_width="match_parent"
+               android:layout_height="20dp"
+               android:layout_below="@id/nickname"
+               android:layout_alignLeft="@id/nickname"
+               android:maxLines="1"
+               android:ellipsize="end"
+               android:text="제목 올 자리 "
+               />
+
+       <TextView
+           android:id="@+id/time"
+           android:layout_width="50dp"
+           android:layout_height="20dp"
+           android:layout_below="@id/thirdImg"
+           android:layout_alignParentRight="true"
+           android:layout_marginTop="3dp"
+           android:layout_marginRight="8dp"
+           android:text="00시간 전" />
+
+   </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
